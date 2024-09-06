@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0580EE2C8B57E60068423C /* InterfazBotones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0580ED2C8B57E60068423C /* InterfazBotones.swift */; };
 		FB9B8D352C8218A100AB21D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B8D342C8218A100AB21D2 /* AppDelegate.swift */; };
 		FB9B8D372C8218A100AB21D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B8D362C8218A100AB21D2 /* SceneDelegate.swift */; };
 		FB9B8D392C8218A100AB21D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B8D382C8218A100AB21D2 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0580ED2C8B57E60068423C /* InterfazBotones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfazBotones.swift; sourceTree = "<group>"; };
 		FB9B8D312C8218A100AB21D2 /* LaCalculadoraChede.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaCalculadoraChede.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B8D342C8218A100AB21D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9B8D362C8218A100AB21D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,9 +78,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0580EB2C8B57A60068423C /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FB0580EC2C8B57BB0068423C /* Interfaz */,
+			);
+			name = Modelo;
+			sourceTree = "<group>";
+		};
+		FB0580EC2C8B57BB0068423C /* Interfaz */ = {
+			isa = PBXGroup;
+			children = (
+				FB0580ED2C8B57E60068423C /* InterfazBotones.swift */,
+			);
+			path = Interfaz;
+			sourceTree = "<group>";
+		};
 		FB9B8D282C8218A100AB21D2 = {
 			isa = PBXGroup;
 			children = (
+				FB0580EB2C8B57A60068423C /* Modelo */,
 				FB9B8D332C8218A100AB21D2 /* LaCalculadoraChede */,
 				FB9B8D4A2C8218A200AB21D2 /* LaCalculadoraChedeTests */,
 				FB9B8D542C8218A200AB21D2 /* LaCalculadoraChedeUITests */,
@@ -259,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9B8D392C8218A100AB21D2 /* ViewController.swift in Sources */,
+				FB0580EE2C8B57E60068423C /* InterfazBotones.swift in Sources */,
 				FB9B8D352C8218A100AB21D2 /* AppDelegate.swift in Sources */,
 				FB9B8D372C8218A100AB21D2 /* SceneDelegate.swift in Sources */,
 			);
