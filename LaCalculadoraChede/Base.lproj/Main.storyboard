@@ -22,9 +22,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="QueHacer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjf-f6-XMG"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2CS-bz-7CO">
                                 <rect key="frame" x="34.333333333333343" y="325" width="324.66666666666663" height="227.33333333333337"/>
@@ -135,7 +132,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="op"/>
                                                 <connections>
-                                                    <action selector="Opciones:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eR9-TC-4IS"/>
+                                                    <action selector="btn_Operacion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0s-QT-ALU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -179,7 +176,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola Mundo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="UIJ-gp-5g2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="UIJ-gp-5g2">
                                 <rect key="frame" x="68" y="89" width="257" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -195,9 +192,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="TextoCambiar" destination="UIJ-gp-5g2" id="W73-lN-tgM"/>
-                        <outlet property="botonParaInteractuar" destination="4Kg-BJ-ceC" id="Y84-Iw-Wn7"/>
-                        <outlet property="btn_Operacion" destination="y2n-6D-M4a" id="4Ja-xi-8UE"/>
+                        <outlet property="btn_Cambia" destination="4Kg-BJ-ceC" id="V28-4f-6rg"/>
+                        <outlet property="btn_ope" destination="y2n-6D-M4a" id="iEa-CY-sdc"/>
+                        <outlet property="txt_Cambiar" destination="UIJ-gp-5g2" id="kCm-73-aEp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
