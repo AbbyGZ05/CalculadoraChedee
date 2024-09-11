@@ -38,13 +38,15 @@ class ViewController: UIViewController {
             txt_Cambiar.text = "\(txt_Cambiar.text ?? "")\(text_a_añadir!)"
         }
         else if (estado_actual == estados_de_la_calculadora.seleccionar_operacion){
-            if let _mensajero: UIButton? = sender{
-                operacion_actual = botones_Interfaz[_mensajero!.restorationIdentifier ?? "boton_0"]?.operacion
+            if let _mensajero_id  = sender.restorationIdentifier{
+                operacion_actual = botones_Interfaz[_mensajero_id]?.operacion
+                estado_actual = estados_de_la_calculadora.seleccionar_nuemros
             }
             else{
                 operacion_actual = nil
             }
         }
+        dibujar_numeros_u_operaciones()
     }
     
     
@@ -66,6 +68,15 @@ class ViewController: UIViewController {
     }
     func dibujar_numeros_u_operaciones(){
         if(estado_actual == estados_de_la_calculadora.seleccionar_operacion){
+            for elemento in botones_Interfaz.values{
+                elemento.referencia_btn_interfaz?.setTitle(elemento.operacion, for: .normal)
+            }
+        }
+        else if(estado_actual == estados_de_la_calculadora.seleccionar_nuemros){
+            for elemento in botones_Interfaz.values{
+                elemento.referencia_btn_interfaz?.setTitle( String(elemento.numero),for: .normal
+                )
+            }
         }
     }
     func identificar_botones(){
@@ -77,8 +88,6 @@ class ViewController: UIViewController {
                 }
             }
         }
-        for elemento in botones_Interfaz.values{
-            elemento.referencia_btn_interfaz?.titleLabel?.text = "h"
-        }
+        
     }
 }
