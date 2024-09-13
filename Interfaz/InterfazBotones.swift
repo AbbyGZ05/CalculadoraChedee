@@ -24,7 +24,7 @@ struct IUBotonCalculadora{
         
         botones_Interfaz["btn_0"] = IUBotonCalculadora(
                                                     numero: Character("0"),
-                                                    operacion: ""
+                                                    operacion: "="
             )
         botones_Interfaz["btn_1"] = IUBotonCalculadora(
                                                     numero: Character("1"),
@@ -32,7 +32,7 @@ struct IUBotonCalculadora{
             )
         botones_Interfaz["btn_2"] = IUBotonCalculadora(
                                                     numero: Character("2"),
-                                                    operacion: ""
+                                                    operacion: "*"
             )
         botones_Interfaz["btn_3"] = IUBotonCalculadora(
                                                     numero: Character("3"),
@@ -40,27 +40,31 @@ struct IUBotonCalculadora{
             )
         botones_Interfaz["btn_4"] = IUBotonCalculadora(
                                                     numero: Character("4"),
-                                                    operacion: ""
+                                                    operacion: "/"
             )
         botones_Interfaz["btn_5"] = IUBotonCalculadora(
                                                     numero: Character("5"),
-                                                    operacion: ""
+                                                    operacion: "☠"
             )
         botones_Interfaz["btn_6"] = IUBotonCalculadora(
                                                     numero: Character("6"),
-                                                    operacion: ""
+                                                    operacion: "☠"
             )
         botones_Interfaz["btn_7"] = IUBotonCalculadora(
                                                     numero: Character("7"),
-                                                    operacion: "*"
+                                                    operacion: "☠"
             )
         botones_Interfaz["btn_8"] = IUBotonCalculadora(
                                                     numero: Character("8"),
-                                                    operacion: ""
+                                                    operacion: "☠"
             )
         botones_Interfaz["btn_9"] = IUBotonCalculadora(
                                                     numero: Character("9"),
-                                                    operacion: "/"
+                                                    operacion: "☠"
+            )
+        botones_Interfaz["btn_igual"] = IUBotonCalculadora(
+                                                    numero: Character("="),
+                                                    operacion: ""
             )
         return botones_Interfaz
         }
